@@ -1,11 +1,11 @@
 # IMDB Sentiment Analysis
 
-## 📊 Dataset Description
+## Dataset Description
 **Source**: [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 
 ---
 
-## 📈 Visual Exploratory Data Analysis (EDA)
+## Visual Exploratory Data Analysis (EDA)
 
 ### 1. Distribution of Sentiment Labels
 ![Distribution of Sentiment Labels](./images/distribution.png)
@@ -40,5 +40,37 @@
 ### 11. Trigram Analysis: Positive vs Negative
 ![Trigram Comparison](./images/trigram_comparison.png)
 
-## ✨ Summary
+## Summary
 The above analysis gives clear insights into text length patterns, word usage differences, and sentiment-based expression in movie reviews. It provides the groundwork for feature engineering in downstream NLP tasks.
+
+## Confusion Matrices for Traditional Machine Learning Models
+
+### Logistic Regression
+![Confusion Matrix - Logistic Regression](images/confusion_logistic_regression.png)
+
+### Naive Bayes
+![Confusion Matrix - Naive Bayes](images/confusion_naive_bayes.png)
+
+### Linear SVM
+![Confusion Matrix - Linear SVM](images/confusion_linear_svm.png)
+
+### XGBoost
+![Confusion Matrix - XGBoost](images/confusion_xgboost.png)
+
+## Deep Learning & Transformer Model Results
+
+### CNN + BiLSTM Performance
+**Training and Validation Accuracy/Loss**
+![CNN + BiLSTM Accuracy and Loss](images/accuracy_loss_lstm_cnn_bilstm.png)
+
+**Confusion Matrix**
+![CNN + BiLSTM Confusion Matrix](images/confusion_lstm_cnn_bilstm.png)
+
+---
+
+### DistilBERT Performance
+**Training and Validation Accuracy/Loss**
+![DistilBERT Accuracy and Loss](images/accuracy_loss_distilbert.png)
+
+**Confusion Matrix**
+![DistilBERT Confusion Matrix](images/confusion_distilbert.png)
