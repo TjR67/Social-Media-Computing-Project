@@ -43,7 +43,9 @@
 ## Summary
 The above analysis gives clear insights into text length patterns, word usage differences, and sentiment-based expression in movie reviews. It provides the groundwork for feature engineering in downstream NLP tasks.
 
-## Confusion Matrices for Traditional Machine Learning Models
+##  Confusion Matrices for Traditional Machine Learning Models
+
+The following confusion matrices represent the classification performance of various traditional machine learning models on the IMDB sentiment analysis task.
 
 ### Logistic Regression
 ![Confusion Matrix - Logistic Regression](images/confusion_logistic_regression.png)
@@ -57,20 +59,40 @@ The above analysis gives clear insights into text length patterns, word usage di
 ### XGBoost
 ![Confusion Matrix - XGBoost](images/confusion_xgboost.png)
 
+### Summary: Traditional ML Models
+
+- **Linear SVM** showed the best performance with high true positive and true negative rates.
+- **Logistic Regression** performed nearly as well, providing a strong and reliable baseline.
+- **Naive Bayes** was the fastest but had more false positives and false negatives.
+- **XGBoost** handled non-linearities better but slightly underperformed compared to SVM.
+
+---
+
 ## Deep Learning & Transformer Model Results
+
+These results reflect the learning trends and classification capability of deep learning architectures including hybrid models and transformers.
 
 ### CNN + BiLSTM Performance
 **Training and Validation Accuracy/Loss**
 ![CNN + BiLSTM Accuracy and Loss](images/accuracy_loss_lstm_cnn_bilstm.png)
 
 **Confusion Matrix**
+<br>
 ![CNN + BiLSTM Confusion Matrix](images/confusion_lstm_cnn_bilstm.png)
 
 ---
 
 ### DistilBERT Performance
-**Training and Validation Accuracy/Loss**
+
+**Training and Validation Accuracy/Loss**  
 ![DistilBERT Accuracy and Loss](images/accuracy_loss_distilbert.png)
 
-**Confusion Matrix**
+**Confusion Matrix**  
 ![DistilBERT Confusion Matrix](images/confusion_distilbert.png)
+
+### Summary: Deep Learning Models
+
+- **CNN + BiLSTM** demonstrated strong accuracy with low validation loss, capturing sequential and contextual dependencies well.
+- **DistilBERT**, despite being a smaller transformer model, provided competitive performance and generalization.
+- Deep learning models achieved better balance in prediction probabilities and adaptability across review patterns.
+
